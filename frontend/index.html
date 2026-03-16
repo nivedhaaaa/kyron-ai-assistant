@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Kyron Medical AI Assistant</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Kyron Medical AI Assistant</h1>
+
+<div class="card">
+
+<h2>Patient Information</h2>
+
+<input id="first" placeholder="First Name">
+<input id="last" placeholder="Last Name">
+<input id="dob" placeholder="DOB (YYYY-MM-DD)">
+<input id="phone" placeholder="Phone">
+<input id="email" placeholder="Email">
+<input id="body" placeholder="Body Part (knee, skin, heart, eye)">
+
+<button onclick="findDoctor()">Find Doctor</button>
+
+</div>
+
+<div class="card">
+
+<h2>Doctor Match</h2>
+
+<div id="doctor"></div>
+<div id="slots"></div>
+
+<button onclick="book()">Book Appointment</button>
+
+</div>
+
+<div class="card">
+
+<h2>Chat Assistant</h2>
+
+<div id="chat"></div>
+
+<input id="msg" placeholder="Ask something...">
+<button onclick="send()">Send</button>
+
+</div>
+
+<div class="card">
+
+<h2>Voice AI</h2>
+
+<button onclick="voice()">Continue Conversation by Phone</button>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
